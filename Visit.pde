@@ -10,7 +10,7 @@ class Visit {
     time = t;
   }
 
-  void render() {
-    ellipse(pos.x, pos.y, 5, 5);
+  void draw() {
+    rect(pos.x, pos.y, 15, 15);
   }
 }

@@ -36,6 +36,6 @@ void loadOpenPathsData(String filename, PVector bBTopLeft, PVector bBBottomRight
 
 void drawPaths() {
   for (Path path : paths) {
-    path.render();
+    path.draw();
   }
 }

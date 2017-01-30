@@ -18,7 +18,7 @@ class Path {
     visits.add(v);
   }
 
-  void render () {
+  void draw () {
     Visit previousVisit = new Visit(null, null);
 
     stroke(pathColor);
@@ -30,7 +30,7 @@ class Path {
         line(v.pos.x, v.pos.y, previousVisit.pos.x, previousVisit.pos.y);
       }
       
-      v.render();
+      v.draw();
       previousVisit = v;
     }
   }
